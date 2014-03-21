@@ -1,0 +1,26 @@
+p {
+	text-align: left;
+	font-size: 16px;
+}
+
+.main {
+	width: 100%;
+	text-align: center;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.instructions {
+	height: 300px;
+	background-color: #ccc;
+}
+
+.instructions-text {
+	text-align: left;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
