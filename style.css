@@ -30,6 +30,11 @@ body {
 	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+#serif {
+	position: relative;
+	top: 1px;
+}
+
 .font-size-btn {
 	width: 50px;
 }
