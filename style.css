@@ -39,12 +39,12 @@ body {
 	width: 50px;
 }
 
-.hide-show {
+.hide-show-btn {
 	margin-top: 10px;
 	text-align: right;
 }
 
-.hide-show a {
+.hide-show-btn a {
 	display: inline-block;
 }
 
