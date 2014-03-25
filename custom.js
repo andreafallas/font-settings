@@ -17,9 +17,9 @@ function changeFontSize(id,step) {
 }
 
 function serif() {
-	document.getElementById('text').style.fontFamily="Georgia, Times, Times New Roman, serif";
+	document.getElementById('content').style.fontFamily="Georgia, Times, Times New Roman, serif";
 }
 
 function sans() {
-	document.getElementById('text').style.fontFamily="Lato,Helvetica,Arial,sans-serif";
+	document.getElementById('content').style.fontFamily="Lato,Helvetica,Arial,sans-serif";
 }

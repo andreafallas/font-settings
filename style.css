@@ -15,8 +15,8 @@ body {
 
 .settings {
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 25px;
+	margin-bottom: 15px;
 }
 
 .settings form {
@@ -42,7 +42,7 @@ body {
 	display: inline-block;
 }
 
-.font-size-btn {
+.font-size-btns button {
 	width: 50px;
 }
 
@@ -50,8 +50,5 @@ body {
 	background-color: #fff;
 	min-height: 800px;
 	margin-bottom: 20px;
-}
-
-.text {
 	padding: 20px;
 }
