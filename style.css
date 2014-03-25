@@ -19,7 +19,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.settings form, a {
+.settings form {
 	padding: 10px;
 }
 
@@ -44,16 +44,6 @@ body {
 
 .font-size-btn {
 	width: 50px;
-}
-
-.hide-show-btn {
-	margin-top: 10px;
-	margin-right: 10px;
-	text-align: right;
-}
-
-.hide-show-btn a {
-	display: inline-block;
 }
 
 .text-container {

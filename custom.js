@@ -8,4 +8,3 @@ function change_text() {
 		button.innerHTML = "Hide instructions";
 	}
 }
-
