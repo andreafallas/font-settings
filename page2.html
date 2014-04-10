@@ -16,46 +16,58 @@
 		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="">
-			<div class="header">
-				<div class="instructions">
-					<h1>Thank you!</h1>
-					<p class="lead">Please answer a few more questions.</p>
-				</div>
+		<div class="header">
+			<div class="instructions">
+				<h1>Great!</i></h1>
+				<p class="lead">Please help us by answering a few more questions.</p>
 			</div>
-			<div>
-				<form>
-					<p>How far away is your screen?</p>
-					<div class="span-5">
-						<div class="dist-btn">
-							<img src="dist1.png">
-							<div class="dist-label">
-								<input type="radio" name="distance" id="dist1"><label for="dist1">Arm's length</label>
-							</div>
-						</div>
-						<div class="dist-btn">
-							<img src="dist2.png">
-							<div class="dist-label">
-								<input type="radio" name="distance" id="dist2"><label for="dist2">Half arm's length</label>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="dist-btn">
-						<img src="dist3.png">
-						<div>
-							<input type="radio" name="distance" id="dist3"><label for="dist3">Further</label>
+		</div>
+		<div class="container">
+			<form id="distance" action="page3.html" class="center">
+				<div>
+					<p class="lead">How far away is your screen?</p>
+				</div>
+				<div>
+					<div class="dist-btn">
+						<img src="images/dist1.png">
+						<div class="dist-label">
+							<input type="radio" name="distance" id="dist1" value="3"><label for="dist1">Arm's length</label>
 						</div>
 					</div>
 					<div class="dist-btn">
-						<img src="dist4.png">
-						<div>
-							<input type="radio" name="distance" id="dist4"><label for="dist4">Closer</label>				
+						<img src="images/dist2.png">
+						<div class="dist-label">
+							<input type="radio" name="distance" id="dist2" value="2"><label for="dist2">Half arm's length</label>
 						</div>
 					</div>
+				</div>
+				<div>
+					<div class="dist-btn">
+						<img src="images/dist3.png">
+						<div>
+							<input type="radio" name="distance" id="dist3" value="4"><label for="dist3">Further</label>
+						</div>
 					</div>
-					<button type="submit" class="btn btn-primary" id="submit">Ok</button>
-				</form> 
+					<div class="dist-btn">
+						<img src="images/dist4.png">
+						<div>
+							<input type="radio" name="distance" id="dist4" value="1"><label for="dist4">Closer</label>				
+						</div>
+					</div>
+				</div>
+				<div class="lead">
+					<p >What is your age?</p>
+					<input type="text" id="age" maxlength="2">
+				</div>
+				<div>
+					<button type="submit" id="submit-distance" class="btn btn-primary">Ok</button>
+				</div>
+			</form>
+			<div class="center">
+				<div class="footnote">
+					<i class="fa fa-info fa-2x pull-left"></i>
+					<p class="small">We are researching online reading preferences. Your answers will help us to build better websites. For more information, please visit our website.</p>
+				</div>
 			</div>
 		</div>
 
