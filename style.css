@@ -114,6 +114,19 @@ label {
 	background-color: #2980B9;
 }
 
+.btn-grey {
+  color: #ffffff;
+  background-color: #bdc3c7;
+}
+
+.btn-grey:hover, .btn-grey:focus {
+	background-color: #cacfd2;
+}
+
+.btn-grey:active {
+	background-color: #a1a6a9;
+}
+
 /*Page classes*/
 
 .instructions {

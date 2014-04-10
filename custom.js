@@ -1,11 +1,22 @@
 $(document).ready(function() {
 
-	$("#sans").prop("checked", true);
-	
+	// Test button
 	$("#helloBtn").click(function() {
 		alert("Hello");
 	});
 
+	// Text content variables
+	var idmin = 1;
+	var idmax = 10;
+
+	// Load text content
+	var id = idmin;
+	$(".text-content").load("content/text-" + id +".html");
+
+	// Set settings
+	$("#sans").prop("checked", true);
+
+	// Settings buttons
 	$("#serif").click(function() {
 		$(".text-content").css("font-family", "Georgia, Times, serif");
 	});
@@ -29,8 +40,9 @@ $(document).ready(function() {
 	});
 
 	$("#reload").click(function(e) {
-		var num = Math.floor((Math.random()*10)+1);
-		$( ".text-content" ).load( "text-" + num + ".html" );
+		id++;
+		if (id > idmax) {id = 1};
+		$( ".text-content" ).load( "./content/text-" + id + ".html" );
 		e.preventDefault();
 	});
 
