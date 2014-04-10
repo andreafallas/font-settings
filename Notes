@@ -1,17 +1,12 @@
 page1.html
 
-	hide_show_btn needs a pointer applied to it when the user mouses over the link.
-	I also want the text to fade. There are several options here:
-	1. Split "Hide instructions" and "Show instructions" into separate elements. Then hide/display these elements using fade-in and fade-out.
-	2. Figure out a way to crossfade the text within the current element using JS.
+	Form
+		The form will need to send the follwing information:
+		* unique identifier - we need a way to ensure the responses belong to a singe session/user go
+		* font-family - to tell whether the user has selected serif or sans
+		* font-size - the size of font displayed when the user submits the form
+		* device / browser - so we can tell what device a user is using
 
-	The control buttons are not working properly. At the moment, the page requires s#link to be appended to work correcty.
+	Radio buttons
+		Add custom FontAwesome icons
 
-	I want to try and wrap the page in the Bootstrap layout to simplify the styles.
-
-	The form needs sorting out.
-	It will need to send the follwing information:
-	* unique identifier - we need a way to ensure the responses belong to a singe session/user go
-	* font-family - to tell whether the user has selected serif or sans
-	* font-size - the size of font displayed when the user submits the form
-	* device / browser - so we can tell what device a user is using

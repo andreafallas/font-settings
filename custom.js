@@ -1,25 +1,37 @@
-function change_text() {
-	var button = document.getElementById('hide_show_btn');
+$(document).ready(function() {
 
-	if (button.innerHTML === "Hide instructions") {
-		button.innerHTML = "Show instructions";
-	}
-	else {
-		button.innerHTML = "Hide instructions";
-	}
-}
+	$("#sans").prop("checked", true);
+	
+	$("#helloBtn").click(function() {
+		alert("Hello");
+	});
 
-function changeFontSize(id,step) {
-	step = parseInt(step,10);
-	var x = document.getElementById(id);
-	var currSize = parseInt(x.style.fontSize,10);
-	x.style.fontSize = (currSize+step) + 'px';
-}
+	$("#serif").click(function() {
+		$(".text-content").css("font-family", "Georgia, Times, serif");
+	});
 
-function serif() {
-	document.getElementById('content').style.fontFamily="Georgia, Times, Times New Roman, serif";
-}
+	$("#sans").click(function() {
+		$(".text-content").css("font-family", "lato, sans-serif;");
+	});
 
-function sans() {
-	document.getElementById('content').style.fontFamily="Lato,Helvetica,Arial,sans-serif";
-}
+	$("#bigger").click(function(e) {
+		var currSize = parseInt($(".text-content").css("font-size"));
+		currSize ++;
+		$(".text-content").css("font-size", currSize + "px");
+		e.preventDefault();
+	});
+
+	$("#smaller").click(function(e) {
+		var currSize = parseInt($(".text-content").css("font-size"));
+		currSize --;
+		$(".text-content").css("font-size", currSize + "px");
+		e.preventDefault();
+	});
+
+	$("#reload").click(function(e) {
+		var num = Math.floor((Math.random()*10)+1);
+		$( ".text-content" ).load( "text-" + num + ".html" );
+		e.preventDefault();
+	});
+
+});

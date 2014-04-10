@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Page 2</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-  <div class="main">
-  	<div class="container">
-	  	<div class="instructions">
-	  		<p class="instructions-text">How far away is your screen?</p>
-	  	</div>
-	  	<div class="boxes">
-	  		<p>Boxes go here</p>
-	  	</div>
-	  	<div class="button">
-	  		<p>Button goes here</p>
-	  	</div>
-  	</div>
-  </div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Page 2</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Font Awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Custom fonts -->
+		<script src="http://use.edgefonts.net/lato:n1,i1,n3,i3,n4,i4,n7,i7,n9,i9:all.js"></script>
+		<script src="http://use.edgefonts.net/merriweather:n3,n4,n7,n9:all.js"></script>
+
+		<!-- Custom styles -->
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="">
+			<div class="header">
+				<div class="instructions">
+					<h1>Thank you!</h1>
+					<p class="lead">Please answer a few more questions.</p>
+				</div>
+			</div>
+			<div>
+				<form>
+					<p>How far away is your screen?</p>
+					<div class="span-5">
+						<div class="dist-btn">
+							<img src="dist1.png">
+							<div class="dist-label">
+								<input type="radio" name="distance" id="dist1"><label for="dist1">Arm's length</label>
+							</div>
+						</div>
+						<div class="dist-btn">
+							<img src="dist2.png">
+							<div class="dist-label">
+								<input type="radio" name="distance" id="dist2"><label for="dist2">Half arm's length</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="dist-btn">
+						<img src="dist3.png">
+						<div>
+							<input type="radio" name="distance" id="dist3"><label for="dist3">Further</label>
+						</div>
+					</div>
+					<div class="dist-btn">
+						<img src="dist4.png">
+						<div>
+							<input type="radio" name="distance" id="dist4"><label for="dist4">Closer</label>				
+						</div>
+					</div>
+					</div>
+					<input type="submit" class="btn btn-primary" id="submit" value="Ok">
+				</form> 
+			</div>
+		</div>
+
+		<!-- Load JS here for greater good =============================-->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="custom.js"></script>
+	</body>
 </html>

@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Page 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<title>Page 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
+		<!-- Custom fonts -->
+		<script src="http://use.edgefonts.net/lato:n1,i1,n3,i3,n4,i4,n7,i7,n9,i9:all.js"></script>
+		<script src="http://use.edgefonts.net/merriweather:n3,n4,n7,n9:all.js"></script>
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- Font Awesome -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-  </head>
+		<!-- Custom styles -->
+		<link href="style.css" rel="stylesheet">
+	</head>
 	<body>
-		<div class="container">
-			<!-- Collapsible instrucionts -->
-			<div class="instructions-container collapse in" id="instructions-container">
-				<div class="instructions-text collapse in" id="instructions-text">
+		<div class="">
+			<div class="header">
+				<div class="instructions">
 					<h1>Are you reading comfortably?</h1>
 					<p class="lead">Adjust the font and size settings for the text below.</p>
 				</div>
-			</div>
-			<!-- Hide/show button -->
-			<div>
-				<a id="hide_show_btn" class="pull-right" onclick="change_text()" data-toggle="collapse" data-target="#instructions-container">Hide instructions</a>
-			</div>
-			<!-- Font and size settings -->
-			<div class="settings">
-				<form>
-					<fieldset>
-					<!-- Radio toggle not working yet -->
-						<div class="btn-group">
-							<button class="btn btn-default btn-lg serif" onclick="serif()"><span id="serif">Serif</span></button>
-							<button class="btn btn-default btn-lg" onclick="sans()">Sans</button>
+				<!-- Font and size settings -->
+				<div class="settings">
+					<form id="font-settings">
+						<div class="form-group">
+							<input type="radio" name="font-size" id="sans"><label for="sans">Sans</label>
+							<input type="radio" name="font-size" id="serif"><label for="serif" class="serif">Serif</label>
 						</div>
-						<div class="font-size-btns">
-							<button class="btn btn-default btn-lg" onclick="changeFontSize('content','2');"><i class="fa fa-plus"></i></button>
-							<button class="btn btn-default btn-lg" onclick="changeFontSize('content',-2);"><i class="fa fa-minus"></i></button>
+						<div class="form-group">
+							<button id="bigger" class="btn btn-blue"><i class="fa fa-plus"></i></button>
+							<button id="smaller" class="btn btn-blue"><i class="fa fa-minus"></i></button>
+							<button id="reload" class="btn btn-default"><i class="fa fa-refresh"></i></button>
 						</div>
-						<button class="btn btn-primary btn-lg">Ok, I'm comfortable</button>
-					</fieldset>
-				</form>
+						<div class="form-group">
+							<button id="submit" type="submit" class="btn btn-primary">That's just right"</button>
+						</div>
+					</form>
+				</div>
 			</div>
 			<!-- Text for reading -->
 			<div class="text-container">
-				<p id="content" style="font-size:16px;">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures or conversation?'</p>
-			</div>
-		
+				<div class="text-content">
+					<p>Alice was beginning to get very tired of sitting by her sister on the bank,
+					and of having nothing to do: once or twice she had peeped into the book her
+					sister was reading, but it had no pictures or conversations in it, `and what 
+					is the use of a book,' thought Alice `without pictures or conversation?'</p>
+					<p>So she was considering in her own mind (as well as she could, for the hot 
+					day made her feel very sleepy and stupid), whether the pleasure of making a 
+					daisy- chain would be worth the trouble of getting up and picking the daisies, 
+					when suddenly a White Rabbit with pink eyes ran close by her.</p>
+					<p>There was nothing so very remarkable in that; nor did Alice think it so 
+					very much out of the way to hear the Rabbit say to itself, `Oh dear! Oh dear! 
+					I shall be late!' (when she thought it over afterwards, it occurred to her 
+					that she ought to have wondered at this, but at the time it all seemed quite 
+					natural); but when the Rabbit actually took a watch out of its waistcoat-pocket, 
+					and looked at it, and then hurried on, Alice started to her feet, for it 
+					flashed across her mind that she had never before seen a rabbit with either a 
+					waistcoat-pocket, or a watch to take out of it, and burning with curiosity, 
+					she ran across the field after it, and fortunately was just in time to see it 
+					pop down a large rabbit-hole under the hedge.</p>
+					<p><a id="helloBtn">Click me to say hello</a><p>
+					<input type="radio" name="test"><label>Test</label>
+					<input type="radio" name="test"><label>This</label>
+				</div>
+			</div>				
 		</div>
 
 		<!-- Load JS here for greater good =============================-->
- 		<script src="custom.js"></script>
-	    <script src="js/jquery-1.8.3.min.js"></script>
-	    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-	    <script src="js/jquery.ui.touch-punch.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-	    <script src="js/bootstrap-select.js"></script>
-	    <script src="js/bootstrap-switch.js"></script>
-	    <script src="js/flatui-checkbox.js"></script>
-	    <script src="js/flatui-radio.js"></script>
-	    <script src="js/jquery.tagsinput.js"></script>
-	    <script src="js/jquery.placeholder.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="custom.js"></script>
 	</body>
 </html>
