@@ -46,4 +46,19 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
+	$("#font-settings").submit(function(e) {
+		var fontSize = parseInt($(".text-content").css("font-size"));
+		// var typeface = $("input[name=typeface]:radio:checked").val();
+		var browserWidth = $(window).width();
+		var browserHeight = $(window).height();
+		// alert(fontSize + "px, " + typeface + ", " + browserWidth + " x " + browserHeight);
+		$("#font-settings").append($("<input>",{type: "hidden", name: "size", value: fontSize}));
+		$("#font-settings").append($("<input>",{type: "hidden", name: "width", value: browserWidth}));
+		$("#font-settings").append($("<input>",{type: "hidden", name: "height", value: browserHeight}));
+		
+		// e.preventDefault();
+	});
+
+
+
 });

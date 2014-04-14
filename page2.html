@@ -23,44 +23,59 @@
 			</div>
 		</div>
 		<div class="container">
-			<form id="distance" action="page3.html" class="center">
-				<div>
-					<p class="lead">How far away is your screen?</p>
-				</div>
-				<div>
-					<div class="dist-btn">
-						<img src="images/dist1.png">
-						<div class="dist-label">
-							<input type="radio" name="distance" id="dist1" value="3"><label for="dist1">Arm's length</label>
-						</div>
+			<form id="distance" action="page3.html" class="center" method="append">
+				<div class="form-row">
+					<div class="lead">
+						<p>What kind of screen are you using?</p>
 					</div>
-					<div class="dist-btn">
-						<img src="images/dist2.png">
-						<div class="dist-label">
-							<input type="radio" name="distance" id="dist2" value="2"><label for="dist2">Half arm's length</label>
-						</div>
+					<div>
+						<input type="radio" name="device" id="desktop" value="desktop"><label for="desktop"><i class="fa fa-desktop fa-5x"></i> Desktop</label>
+						<input type="radio" name="device" id="laptop" value="laptop"><label for="laptop"><i class="fa fa-laptop fa-5x"></i> Laptop</label>
+						<input type="radio" name="device" id="tablet" value="tablet"><label for="tablet"><i class="fa fa-tablet fa-5x"></i> Tablet</label>
+						<input type="radio" name="device" id="mobile" value="mobile"><label for="mobile"><i class="fa fa-mobile fa-5x"></i> Mobile</label>
 					</div>
 				</div>
-				<div>
-					<div class="dist-btn">
-						<img src="images/dist3.png">
-						<div>
-							<input type="radio" name="distance" id="dist3" value="4"><label for="dist3">Further</label>
+				<div class="form-row">
+					<div>
+						<p class="lead">How far away is your screen?</p>
+					</div>
+					<div>
+						<div class="dist-btn">
+							<img src="images/dist1.png">
+							<div class="dist-label">
+								<input type="radio" name="distance" id="dist1" value="3"><label for="dist1">Arm's length</label>
+							</div>
+						</div>
+						<div class="dist-btn">
+							<img src="images/dist2.png">
+							<div>
+								<input type="radio" name="distance" id="dist2" value="2"><label for="dist2">Half arm's length</label>
+							</div>
 						</div>
 					</div>
-					<div class="dist-btn">
-						<img src="images/dist4.png">
-						<div>
-							<input type="radio" name="distance" id="dist4" value="1"><label for="dist4">Closer</label>				
+					<div>
+						<div class="dist-btn">
+							<img src="images/dist3.png">
+							<div>
+								<input type="radio" name="distance" id="dist3" value="4"><label for="dist3">Further</label>
+							</div>
+						</div>
+						<div class="dist-btn">
+							<img src="images/dist4.png">
+							<div>
+								<input type="radio" name="distance" id="dist4" value="1"><label for="dist4">Closer</label>				
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="lead">
-					<p >What is your age?</p>
-					<input type="text" id="age" maxlength="2">
-				</div>
-				<div>
-					<button type="submit" id="submit-distance" class="btn btn-primary">Ok</button>
+				<div class="form-row">
+					<div class="lead">
+						<p>What is your age?</p>
+						<input type="text" name="age" id="age" maxlength="2">
+					</div>
+					<div>
+						<button type="submit" id="submit-distance" class="btn btn-primary">Ok</button>
+					</div>
 				</div>
 			</form>
 			<div class="center">
