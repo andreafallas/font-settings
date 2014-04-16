@@ -14,7 +14,7 @@ $(document).ready(function() {
 	$(".text-content").load("content/text-" + id +".html");
 
 	// Set settings
-	$("#sans").prop("checked", true);
+	// $("#sans").prop("checked", true);
 
 	// Settings buttons
 	$("#serif").click(function() {
@@ -51,14 +51,18 @@ $(document).ready(function() {
 		// var typeface = $("input[name=typeface]:radio:checked").val();
 		var browserWidth = $(window).width();
 		var browserHeight = $(window).height();
+		var timestamp = new Date();
 		// alert(fontSize + "px, " + typeface + ", " + browserWidth + " x " + browserHeight);
 		$("#font-settings").append($("<input>",{type: "hidden", name: "size", value: fontSize}));
 		$("#font-settings").append($("<input>",{type: "hidden", name: "width", value: browserWidth}));
 		$("#font-settings").append($("<input>",{type: "hidden", name: "height", value: browserHeight}));
-		
+		$("#font-settings").append($("<input>",{type: "hidden", name: "timestamp", value: timestamp}));
+		window.location = "page2.html";
 		// e.preventDefault();
 	});
 
-
+	$("#questions").submit(function(e) {
+		window.location = "page3.html";
+	});
 
 });
